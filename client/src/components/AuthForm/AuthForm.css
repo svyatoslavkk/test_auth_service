@@ -1,0 +1,130 @@
+.auth__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  max-width: 500px;
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem;
+  animation: anim1 .3s ease-out;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.input__wrapper {
+  position: relative;
+  max-width: 500px;
+  height: 46px;
+  width: 100%;
+}
+
+.primary__input {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-left: 50px;
+  font-size: 14px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4rem;
+  outline: none;
+  box-shadow: 0 0 12px #00000014;
+  transition: .3s ease-out;
+}
+
+.primary__input:focus {
+  border: 2px solid #f8bd24;
+}
+
+.input__icon {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.btn__icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #ff0000;
+}
+
+.primary__btn {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 5px #00000014;
+  width: 100%;
+  height: 43px;
+  border-radius: 32px;
+  padding: .5rem 2rem;
+  font-weight: 500;
+  font-size: .9rem;
+  white-space: nowrap;
+  transition: .3s ease-out;
+}
+
+.login__btn {
+  color: #fff;
+  background: #f8bd24;
+}
+.login__btn:hover {
+  color: #f8bd24;
+  background: #fff;
+}
+
+.white__btn {
+  color: #555;
+  background: #fff;
+  text-decoration: none;
+}
+.white__btn:hover {
+  color: #fff;
+  background: #f8bd24;
+}
+
+.btn__icon {
+  display: flex;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 500px) {
+  .buttons {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,23 @@
+@import './pages/Login/login.css';
+@import './pages/Register/register.css';
+@import './components/ModalAuthSuccess/modalAuthSuccess.css';
+@import './components/AuthForm/AuthForm.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

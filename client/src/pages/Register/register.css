@@ -1,0 +1,8 @@
+.gray__btn {
+  color: #fff;
+  background: #bbb;
+}
+.gray__btn:hover {
+  color: #f8bd24;
+  background: #fff;
+}
